@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student Tools Website</title>
+        <link rel="stylesheet" 
+    href="style.css">
+</head>
+<footer>
+    <p>© 2026 Student Tools Website</p>
+    <p>Made by Niraj</p>
+</footer>
+<body>
+    
+    
+    <div class="navbar">
+        <h2>StudentTools</h2>
+        <a href="#">Home</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <section class="hero">
+    <h1>Student Tools Hub</h1>
+    <p>All useful calculators and tools for students in one place.</p>
+    <button>Explore Tools</button>
+    </section>
+    <h2 id="clock"></h2>
+    <h1>Student Tools Website</h1>
+    <h2>Available Tools</h2>
+    <div class="tools">
+    <div class="tools-card">
+    <span class="icon">🧮</span>
+    <h3>Calculator</h3>
+    <p>Perform basic calculations quickly.</p>
+    <input type="number" id="num1" placeholder="Pehla Number">
+
+<input type="number" id="num2" placeholder="Dusra Number">
+
+<button onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="multiply()">×</button>
+<button onclick="divide()">÷</button>
+
+<p id="result"></p>
+</div>
+<div class="tools-card">
+    <h3>Unit Converter</h3>
+    <input type="number" id="cm" placeholder="CM">
+<button onclick="convert()">Meter Banao</button>
+
+<p id="meterResult"></p>
+    <p>Convert length, weigth and more.</p>
+  </div>
+
+  <div class="tools-card">
+    <h3>Percentage Calculator</h3>
+    <p>Calculate percentages instantly.</p>
+    <input type="number" id="obtained" placeholder="Prapt Marks">
+
+<input type="number" id="total" placeholder="Total Marks">
+
+<button onclick="percentage()">Percentage Nikalo</button>
+
+<p id="percentResult"></p>
+  </div>
+</div class="tools-card">
+ <h3>EMI Calculator</h3>
+  <p>Calculate your monthly loan EMI.</p>
+</div>
+  <div class="tools-card">
+    <h3>Age Calculator</h3>
+    <input type="date" id="dob">
+
+<button onclick="calculateAge()">Age Nikalo</button>
+
+<p id="ageResult"></p>
+    <p>Find your exact age in seconds.</p>
+  </div>
+
+  <div class="tools-card">
+    <h3>BMI Calculator</h3>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+
+<input type="number" id="height" placeholder="Height (meter)">
+
+<button onclick="calculateBMI()">BMI Nikalo</button>
+
+<p id="bmiResult"></p>
+    <p>Check your Body Mass Index.</p>
+</div>
+
+<div class="tools-card">
+    <h3>CGPA Calculator</h3>
+    <h3>CGPA Calculator</h3>
+
+<input type="number" id="cgpa" placeholder="CGPA">
+
+<button onclick="calculateCGPA()">Percentage Nikalo</button>
+
+<p id="cgpaResult"></p>
+    <p>Calculate your CGPA easily.</p>
+</div>
+
+<div class="tools-card">
+    <h3>GST Calculator</h3>
+    <h3>GST Calculator</h3>
+
+<input type="number" id="amount" placeholder="Amount">
+
+<input type="number" id="gst" placeholder="GST %">
+
+<button onclick="calculateGST()">GST Nikalo</button>
+
+<p id="gstResult"></p>
+    <p>Calculate GST instantly.</p>
+</div>
+
+<div class="tools-card">
+    <h3>EMI Calculator</h3>
+    <input type="number" id="loan" placeholder="Loan Amount">
+
+<input type="number" id="rate" placeholder="Interest Rate (%)">
+
+<input type="number" id="time" placeholder="Time (Years)">
+
+<button onclick="calculateEMI()">EMI Nikalo</button>
+
+<p id="emiResult"></p>
+    <p>Calculate loan EMI.</p>
+</div>
+    <div class="tools-card">
+    <h3>📐 Percentage Calculator</h3>
+    <p>Calculate percentage easily.</p>
+</div>
+
+<div class="tools-card">
+    <h3>🎂 Age Calculator</h3>
+    <p>Find your exact age instantly.</p>
+</div>
+
+<div class="tools-card">
+    <h3>📏 Unit Converter</h3>
+    <p>Convert units quickly.</p>
+</div>
+    <a
+    href="https://www.google.com">
+    google Open Karo</a>
+    <button
+    onclick="alert( 'Niraj' )">Show My Name
+    button>
+    <p>Welcome to my Student Tools
+    Welcome.</p>
+    <img
+    src="https://via.placeholder.com/150"
+    alt="My Image">
+    <button onclick="showMessage()">Click
+    Me</button>
+    <p id="msg"></p>
+    <script>
+        function updateClock() {
+    let now = new Date();
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#tools">Tools</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h1>Student Tools Website</h1>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<section id="tools">
+    <h2>Tools</h2>
+<input type="number" id="num1">
+
+<input type="number" id="num2">
+
+<button>Jodo</button>
+    <h3>📊 Percentage Calculator</h3>
+    <h3>🎂 Age Calculator</h3>
+    <input type="number" id="birthYear" placeholder="Birth Year">
+
+<button onclick="calculateAge()">Age Nikalo</button>
+
+<p id="ageResult"></p>
+    <h3>📏 Unit Converter</h3>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>Useful tools for students.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+</section>
+<script>
+function add() {
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+
+    document.getElementById("result").innerHTML =
+    "Result = " + (a + b);
+}
+function subtract() {
+  let a = Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value);
+  document.getElementById("result").innerHTML = "Result = " + (a - b);
+}
+
+function multiply() {
+  let a = Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value);
+  document.getElementById("result").innerHTML = "Result = " + (a * b);
+}
+
+function divide() {
+  let a = Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value);
+  document.getElementById("result").innerHTML = "Result = " + (a / b);
+}
+function percentage() {
+  let obtained = Number(document.getElementById("obtained").value);
+  let total = Number(document.getElementById("total").value);
+
+  let percent = (obtained / total) * 100;
+
+  document.getElementById("percentResult").innerHTML =
+  "Percentage = " + percent.toFixed(2) + "%";
+}
+function convert() {
+    let cm = Number(document.getElementById("cm").value);
+
+    let meter = cm / 100;
+    let kilometer = cm / 100000;
+    let inch = cm / 2.54;
+    document.getElementById("meterResult").innerHTML =
+    "Meter = " + meter + "<br>" +
+    "Kilometer = " + kilometer + "<br>" +
+    "Inch = " + inch.toFixed(2);
+}
+function calculateAge() {
+    let dob = new Date(document.getElementById("dob").value);
+    let today = new Date();
+
+    let years = today.getFullYear() - dob.getFullYear();
+    let months = today.getMonth() - dob.getMonth();
+    let days = today.getDate() - dob.getDate();
+
+    if (days < 0) {
+        months--;
+        days += 30;
+    }
+    if (months < 0) {
+    years--;
+    months += 12;
+}
+
+document.getElementById("ageResult").innerHTML =
+    "Age = " + years + " saal, " +
+    months + " mahine, " +
+    days + " din";
+
+}
+function calculateEMI() {
+
+    let loan = Number(document.getElementById("loan").value);
+    let rate = Number(document.getElementById("rate").value);
+    let time = Number(document.getElementById("time").value);
+
+    let monthlyRate = rate / 12 / 100;
+    let months = time * 12;
+
+    let emi =
+    (loan * monthlyRate * Math.pow(1 + monthlyRate, months))
+    /
+    (Math.pow(1 + monthlyRate, months) - 1);
+
+    document.getElementById("emiResult").innerHTML =
+    "Monthly EMI = ₹" + emi.toFixed(2);
+
+}
+function calculateCGPA() {
+
+    let cgpa = Number(document.getElementById("cgpa").value);
+
+    let percentage = cgpa * 9.5;
+
+    document.getElementById("cgpaResult").innerHTML =
+    "Percentage = " + percentage.toFixed(2) + "%";
+
+}
+function calculateGST() {
+
+    let amount = Number(document.getElementById("amount").value);
+    let gst = Number(document.getElementById("gst").value);
+
+    let gstAmount = (amount * gst) / 100;
+    let total = amount + gstAmount;
+
+    document.getElementById("gstResult").innerHTML =
+    "GST = ₹" + gstAmount.toFixed(2) +
+    "<br>Total Amount = ₹" + total.toFixed(2);
+
+}
+function calculateBMI() {
+    let weight = Number(document.getElementById("weight").value);
+
+    let height = Number(document.getElementById("height").value);
+
+    let bmi = weight / (height * height);
+
+    document.getElementById("bmiResult").innerHTML =
+    "BMI = " + bmi.toFixed(2);
+}
+</script>

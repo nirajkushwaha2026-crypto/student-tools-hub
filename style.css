@@ -1,0 +1,428 @@
+body {
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background: linear-gradient(135deg, #eef2f7,  #dbeafe);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tool-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tool-box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+i {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.tools-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tools-card:hover {
+    transform: translateY(-8px);
+}
+.tools-card{
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tools-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+.tools-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.hero{
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+.hero button{
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover{
+    transform: scale(1.05);
+}
+.hero h1{
+    font-size: 45px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+.tools-card{
+    transition: 0.3s;
+}
+
+.tools-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px
+ rgba(0, 0, 0, 0.2);
+}
+.hero h1{
+    font-size: 50px;
+}
+
+.hero p{
+    font-size: 20px;
+}
+.hero{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.tools-card h3{
+    color: #007bff;
+}
+
+.tools-card{
+    border-left: 5px solid #007bff;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+button{
+background: white;
+color: #007bff;
+    border: 2px solid #007ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ffffff;
+    color: #0d6efd;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0d6efd;
+    color: white;
+    transform: scale(1.08);
+}
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.tools li {
+    background: linear-gradient(135deg, #4facfe, #00c6fb);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tools li:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+.tool-card{
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.tool-card:hover{
+    transform: translateY(-8px);
+    border-color:#4f46e5;
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+}
+.tool-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.tool-card h3 {
+    margin-bottom: 10px;
+    color: #0d47a1;
+}
+
+.tool-card p {
+    color: #555;
+    line-height: 1.6;
+}
+.tool-card button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.tool-card button:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 12px rgba(37,99,235,0.3);
+}
+
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,99,235,0.4);
+}
+input {
+    padding: 10px;
+    width: 220px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#meterResult {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+.tool-card{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 15px;
+    min-height: 220px;
+}
+.tool-card{
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.tool-card:hover{
+    transform: scale(1.03);
+}
+button{
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #2196F3;
+    transform: scale(1.05);
+}
+body{
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tool-card{
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.tool-card:hover{
+    transform: scale(1.03);
+}
+
+button{
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #2196F3;
+    transform: scale(1.05);
+}
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e88e5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+.card {
+    box-shadow: 0 5px 15px gray;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
